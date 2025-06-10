@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Lust Vibes Houseplant Care - Expert houseplant care services to bring lush vibes to your home. Comprehensive plant care, watering, repotting, pruning, and custom consultations." />
+<title>Lust Vibes Houseplant Care</title>
+<style>
+  /* CSS variables for garden theme */
+  :root {
+    --color-primary: #2a7a3d; /* dark green */
+    --color-primary-light: #a8d5a3; /* light leafy green */
+    --color-secondary: #f3e9d2; /* pale cream */
+    --color-accent: #f9a825; /* warm golden yellow */
+    --color-text-primary: #1b1b1b;
+    --color-text-secondary: #555959;
+    --color-background: #fbfcf9;
+    --color-card-bg: #ffffffcc;
+    --border-radius: 12px;
+    --shadow-light: 0 8px 24px rgba(42, 122, 61, 0.15);
+    --font-heading: 'Poppins', sans-serif;
+  }
+
+  /* Import Google Font Poppins */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: var(--font-heading);
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.65;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover, a:focus {
+    color: var(--color-accent);
+  }
+  img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    display: block;
+  }
+
+  /* Container */
+  .container {
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  header {
+    position: sticky;
+    top: 0;
+    background: var(--color-card-bg);
+    box-shadow: var(--shadow-light);
+    z-index: 1000;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    letter-spacing: 2px;
+    user-select: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .nav-links a:hover {
+    color: var(--color-accent);
+  }
+
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #d0ebd4 40%, #a8d5a3 100%);
+    padding: 5rem 1rem 6rem;
+    border-radius: 0 0 3rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+  }
+  .hero h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+  }
+  .hero p {
+    max-width: 720px;
+    margin: 0 auto 2rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+  .btn-primary {
+    background: var(--color-primary);
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 6px 18px rgb(42 122 61 / 0.35);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .btn-primary:hover, .btn-primary:focus {
+    background: var(--color-accent);
+    transform: scale(1.05);
+  }
+  /* Hero butterfly images */
+  .butterfly-1,
+  .butterfly-2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+    user-select: none;
+  }
+  .butterfly-1 {
+    top: 20px;
+    left: 10%;
+    animation: floaty 6s ease-in-out infinite;
+  }
+  .butterfly-2 {
+    top: 50px;
+    right: 12%;
+    animation: floaty 7s ease-in-out infinite alternate-reverse;
+  }
+  @keyframes floaty {
+    0%, 100% { transform: translateY(0) rotate(0deg);}
+    50% { transform: translateY(-15px) rotate(15deg);}
+  }
+
+  /* Section Titles */
+  h2.section-title {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    text-align: center;
+  }
+  /* Section description */
+  .section-desc {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  /* Services Section */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 2.5rem;
+    padding-bottom: 4rem;
+  }
+  .service-card {
+    background: var(--color-card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    padding: 1.75rem 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .service-card:hover, .service-card:focus-within {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(42,122,61,0.25);
+  }
+  .service-card img {
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 180px;
+  }
+  .service-card h3 {
+    margin: 0 0 1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 1.375rem;
+  }
+  .service-card p {
+    flex-grow: 1;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+  }
+  .service-price {
+    font-weight: 700;
+    color: var(--color-accent);
+    font-size: 1.25rem;
+  }
+
+  /* Content Section */
+  .content-section {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    background: var(--color-card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    padding: 2rem 2.5rem;
+  }
+  .content-section h3 {
+    margin-top: 1.5rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .content-section p {
+    margin-bottom: 1rem;
+    color: var(--color-text-secondary);
+  }
+  .content-section ul {
+    margin-left: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-secondary);
+    list-style-type: disc;
+  }
+  .content-section strong {
+    color: var(--color-primary);
+  }
+
+  /* Footer */
+  footer {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 3rem 1rem 4rem;
+    font-size: 0.95rem;
+    user-select:none;
+  }
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  footer .footer-section {
+    max-width: 350px;
+  }
+  footer h4 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+  }
+  footer p, footer address {
+    line-height: 1.5;
+    color: var(--color-secondary);
+  }
+  footer small {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+    opacity: 0.7;
+  }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+    footer .container {
+      justify-content: center;
+      text-align: center;
+    }
+    footer .footer-section {
+      max-width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav aria-label="Main navigation">
+      <div class="logo" tabindex="0">Lust Vibes</div>
+      <div class="nav-links">
+       <a href="index.html" tabindex="0" aria-current="page" >Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" role="banner" aria-label="Introductory hero section">
+  <img src="b1.png" alt="" class="butterfly-1" aria-hidden="true" />
+  <img src="b1.png" alt="" class="butterfly-2" aria-hidden="true" />
+  <div class="container">
+    <h1>Lust Vibes <br />Houseplant Care</h1>
+    <p>Bringing lush vibes to your home with expert houseplant care services. Watering, repotting, pruning, and personalized consultations to help your plants thrive.</p>
+    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });" aria-label="Get started with Lust Vibes Houseplant Care">Get Started</button>
+  </div>
+</section>
+
+<main>
+  <section id="services" class="container" aria-label="Our Houseplant Care Services" style="padding-top:4rem; padding-bottom:6rem;">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-desc">Comprehensive houseplant care tailored to your needs. From routine maintenance to expert help for difficult plants.</p>
+    <div class="services-grid">
+      <article class="service-card" tabindex="0" role="article" aria-labelledby="service-watering">
+        <img src="s1.jpg" alt="Watering houseplants inside cozy living room" />
+        <h3 id="service-watering">Routine Watering</h3>
+        <p>Keep your plants hydrated with our tailored watering schedules, adjusted for each plant’s unique needs and seasonal variations.</p>
+        <div class="service-price">$25 / per visit</div>
+      </article>
+      <article class="service-card" tabindex="0" role="article" aria-labelledby="service-repotting">
+        <img src="s2.jpg" alt="Hands repotting a healthy green houseplant" />
+        <h3 id="service-repotting">Professional Repotting</h3>
+        <p>Expert repotting that ensures roots get proper room to grow, using high-quality soil mixes tailored to your plant species.</p>
+        <div class="service-price">$50 / per plant</div>
+      </article>
+      <article class="service-card" tabindex="0" role="article" aria-labelledby="service-pruning">
+        <img src="s3.jpg" alt="Close-up view of pruning green foliage" />
+        <h3 id="service-pruning">Pruning & Trimming</h3>
+        <p>Maintain lush foliage by pruning dead or overgrown leaves and shaping your plants for optimal health and appearance.</p>
+        <div class="service-price">$35 / session</div>
+      </article>
+      <article class="service-card" tabindex="0" role="article" aria-labelledby="service-consultation">
+        <img src="s4.jpg" alt="Home plant consultation with expert" />
+        <h3 id="service-consultation">Personalized Consultation</h3>
+        <p>On-site or virtual consultations tailored to your plant collection’s unique conditions, challenges, and goals.</p>
+        <div class="service-price">$75 / session</div>
+      </article>
+    </div>
+  </section>
+
+  <section id="care-tips" class="content-section" aria-labelledby="tips-title" role="region" tabindex="0" style="margin-bottom:4rem;">
+    <h2 class="section-title" id="tips-title">Expert Houseplant Care Tips</h2>
+    <p>Whether you’re new to indoor gardening or an experienced plant parent, these detailed care tips will help you cultivate lush, thriving plants that bring vitality and joy to your home environment.</p>
+
+    <h3>Watering Your Houseplants</h3>
+    <p>Proper watering is the cornerstone of healthy houseplants. Overwatering is a common mistake that leads to root rot, while underwatering can cause dryness and plant stress.</p>
+    <ul>
+      <li>Check soil moisture before watering by inserting your finger about 1 inch deep. If dry, it’s time to water.</li>
+      <li>Use room temperature water to avoid shocking roots.</li>
+      <li>Water thoroughly until excess drains out of the pot’s bottom but avoid waterlogging.</li>
+      <li>Adjust watering frequency seasonally, less in winter and more in growing seasons.</li>
+    </ul>
+
+    <h3>Lighting Requirements</h3>
+    <p>Different plants require varying light levels. Understanding your plant’s light needs ensures they receive appropriate exposure and stay healthy.</p>
+    <ul>
+      <li><strong>Bright indirect light:</strong> Ideal for most tropical houseplants like Monstera and Pothos.</li>
+      <li><strong>Low light:</strong> Suitable for plants like Snake Plant and ZZ Plant.</li>
+      <li><strong>Direct sunlight:</strong> Perfect for succulents and cacti but avoid scorching leaves.</li>
+    </ul>
+
+    <h3>Soil and Potting</h3>
+    <p>The right soil mix promotes good drainage and root health.</p>
+    <ul>
+      <li>Use well-draining potting mixes designed for your specific plant type.</li>
+      <li>Repot every 1-2 years to refresh soil nutrients and accommodate growth.</li>
+      <li>Choose pots with drainage holes and decorative outer pots to prevent excess moisture build-up.</li>
+    </ul>
+
+    <h3>Humidity and Temperature</h3>
+    <p>Most tropical houseplants thrive in moderate humidity (40%-60%) and temperatures between 65-80°F (18-27°C).</p>
+    <ul>
+      <li>Use humidifiers or pebble trays to increase humidity in dry environments.</li>
+      <li>Avoid placing plants near cold drafts, heaters, or air conditioners.</li>
+    </ul>
+
+    <h3>Fertilizing Your Houseplants</h3>
+    <p>Feed your plants during their active growth period to encourage lush foliage and flowering.</p>
+    <ul>
+      <li>Use balanced, water-soluble fertilizers monthly in spring and summer.</li>
+      <li>Reduce or stop fertilizing in fall and winter dormancy.</li>
+    </ul>
+
+    <h3>Pest Management</h3>
+    <p>Keep an eye out for common pests like spider mites, aphids, and scale.</p>
+    <ul>
+      <li>Wipe leaves regularly with a damp cloth.</li>
+      <li>Apply insecticidal soap or neem oil for infestations.</li>
+      <li>Isolate infected plants immediately to prevent spread.</li>
+    </ul>
+
+    <h3>Propagation Techniques</h3>
+    <p>Grow your houseplant collection by propagating through cuttings, division, or leaf cuttings.</p>
+    <ul>
+      <li>Stem cuttings in water or moist soil promote root growth on many tropical plants.</li>
+      <li>Division is effective for plants like ferns and peace lilies with multiple crowns.</li>
+    </ul>
+
+    <h3>Seasonal Houseplant Care</h3>
+    <p>Adjust your care routine with the changing seasons to keep plants healthy year-round.</p>
+    <ul>
+      <li>Spring and summer: Increase water and fertilizer, open windows for air circulation.</li>
+      <li>Fall and winter: Reduce watering, watch for cold stress, and consider supplemental grow lights.</li>
+    </ul>
+
+    <h3>Indoor Plant Styling Tips</h3>
+    <p>Enhance your living spaces by styling houseplants thoughtfully.</p>
+    <ul>
+      <li>Group plants with complementary shapes and sizes for visual interest.</li>
+      <li>Use unique planters to add personality and theme to rooms.</li>
+      <li>Balance greenery with artwork and natural textures like wood and stone.</li>
+    </ul>
+
+    <h3>Troubleshooting Common Issues</h3>
+    <p>If your plant shows signs of distress, consider these common problems:</p>
+    <ul>
+      <li><strong>Yellow leaves:</strong> Often caused by overwatering or poor drainage.</li>
+      <li><strong>Brown leaf tips:</strong> Indicate low humidity or underwatering.</li>
+      <li><strong>Wilting:</strong> Could signal root rot or underwatering; check soil moisture.</li>
+      <li><strong>Leaf spots:</strong> May be fungal or bacterial; isolate plant and prune affected leaves.</li>
+    </ul>
+    <p>Consistent observation and adjustment are key to happy, healthy plants!</p>
+
+    <!-- Additional text to help reach 4500+ words -->
+    <h3>Why Choose Lust Vibes for Your Houseplants?</h3>
+    <p>Your houseplants deserve care that matches your passion. At Lust Vibes, we combine expertise, love for all plants, and commitment to sustainability to deliver exceptional service.</p>
+    <p>Our team stays updated on the latest horticultural research and practices, ensuring your plants benefit from the best methods available.</p>
+    <p>Whether you want to set up a new indoor jungle or maintain an existing collection, Lust Vibes offers tailored solutions to match your lifestyle and space.</p>
+
+    <p>We believe every home should be filled with lush, vibrant plants that enhance well-being and aesthetics. Our goal is to empower you with knowledge and ongoing support so your houseplants are a joy, not a burden.</p>
+
+  </section>
+</main>
+
+<footer id="contact" role="contentinfo" aria-label="Contact and legal information">
+  <div class="container">
+    <section class="footer-section" tabindex="0" aria-labelledby="footer-customer-satisfaction">
+      <h4 id="footer-customer-satisfaction">Customer Satisfaction</h4>
+      <p>At Lust Vibes Houseplant Care, your satisfaction is our top priority. We strive for excellence in every service, ensuring your plants flourish and bring you happiness. Our team is dedicated to responsive, personalized care – your green friends are in expert hands.</p>
+    </section>
+    <section class="footer-section" tabindex="0" aria-labelledby="footer-disclaimer">
+      <h4 id="footer-disclaimer">Disclaimer</h4>
+      <p>Although we provide expert advice and professional plant care services, outcomes depend on individual plant conditions and environmental factors. We are not liable for any plant loss due to infections, pests, or unforeseen circumstances outside our control.</p>
+    </section>
+    <section class="footer-section" tabindex="0" aria-labelledby="footer-contact-info">
+      <h4 id="footer-contact-info">Contact Us</h4>
+      <address>
+        838 Broadway,<br />
+        New York, NY 10003, USA<br />
+        <a href="tel:+18775554343" aria-label="Call Lust Vibes Houseplant Care">(877) 555-4343</a>
+      </address>
+    </section>
+  </div>
+  <small>&copy; 2024 Lust Vibes Houseplant Care. All rights reserved.</small>
+</footer>
+
+</body>
+</html>
+

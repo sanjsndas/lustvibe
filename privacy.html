@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Privacy Policy for Lust Vibes Houseplant Care - Our commitment to protecting your privacy and personal data." />
+<title>Privacy Policy - Lust Vibes Houseplant Care</title>
+<style>
+  /* Same CSS as index.html for consistent theme and styling */
+  :root {
+    --color-primary: #2a7a3d; /* dark green */
+    --color-primary-light: #a8d5a3; /* light leafy green */
+    --color-secondary: #f3e9d2; /* pale cream */
+    --color-accent: #f9a825; /* warm golden yellow */
+    --color-text-primary: #1b1b1b;
+    --color-text-secondary: #555959;
+    --color-background: #fbfcf9;
+    --color-card-bg: #ffffffcc;
+    --border-radius: 12px;
+    --shadow-light: 0 8px 24px rgba(42, 122, 61, 0.15);
+    --font-heading: 'Poppins', sans-serif;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: var(--font-heading);
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.65;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover, a:focus {
+    color: var(--color-accent);
+  }
+  img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    display: block;
+  }
+  .container {
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    background: var(--color-card-bg);
+    box-shadow: var(--shadow-light);
+    z-index: 1000;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    letter-spacing: 2px;
+    user-select: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .nav-links a:hover, .nav-links a[aria-current="page"] {
+    color: var(--color-accent);
+    font-weight: 700;
+  }
+  .hero {
+    background: linear-gradient(135deg, #d0ebd4 40%, #a8d5a3 100%);
+    padding: 5rem 1rem 4rem;
+    border-radius: 0 0 3rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+  }
+  .hero h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    line-height: 1.1;
+  }
+  .hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    font-size: 1.25rem;
+  }
+  /* Butterfly decoration */
+  .butterfly-1,
+  .butterfly-2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+    user-select: none;
+  }
+  .butterfly-1 {
+    top: 20px;
+    left: 10%;
+    animation: floaty 6s ease-in-out infinite;
+  }
+  .butterfly-2 {
+    top: 50px;
+    right: 12%;
+    animation: floaty 7s ease-in-out infinite alternate-reverse;
+  }
+  @keyframes floaty {
+    0%, 100% { transform: translateY(0) rotate(0deg);}
+    50% { transform: translateY(-15px) rotate(15deg);}
+  }
+  main {
+    max-width: 900px;
+    margin: 3rem auto 6rem;
+    padding: 0 1rem;
+  }
+  main h2 {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    text-align: left;
+  }
+  main h3 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  main p {
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  main ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-secondary);
+    list-style-type: disc;
+  }
+  main ul li {
+    margin-bottom: 0.5rem;
+  }
+  footer {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 3rem 1rem 4rem;
+    font-size: 0.95rem;
+    user-select:none;
+  }
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  footer .footer-section {
+    max-width: 350px;
+  }
+  footer h4 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+  }
+  footer p, footer address {
+    line-height: 1.5;
+    color: var(--color-secondary);
+  }
+  footer small {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+    opacity: 0.7;
+  }
+  @media (max-width: 700px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    footer .container {
+      justify-content: center;
+      text-align: center;
+    }
+    footer .footer-section {
+      max-width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav aria-label="Main navigation">
+      <div class="logo" tabindex="0">Lust Vibes</div>
+      <div class="nav-links">
+        <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0"aria-current="page">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" role="banner" aria-label="Privacy Policy Introduction">
+  <img src="b1.png" alt="" class="butterfly-1" aria-hidden="true" />
+  <img src="b1.png" alt="" class="butterfly-2" aria-hidden="true" />
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p>At Lust Vibes Houseplant Care, your privacy is paramount. This policy outlines how we collect, use, and protect your personal data with transparency and care.</p>
+  </div>
+</section>
+
+<main aria-label="Privacy Policy detailed content">
+  <section>
+    <h2>Introduction</h2>
+    <p>We at Lust Vibes Houseplant Care take your privacy seriously. This Privacy Policy describes how and why we collect, use, and safeguard your personal information when you visit our website or use our services. Please read carefully to understand our practices.</p>
+    <p>By accessing or using our services, you consent to the data practices described in this policy. If you do not agree, please refrain from using our services.</p>
+  </section>
+
+  <section>
+    <h2>Information We Collect</h2>
+    <h3>Information You Provide to Us</h3>
+    <p>We collect personal information that you voluntarily provide when you interact with us, such as:</p>
+    <ul>
+      <li>Contact information (name, email, phone number)</li>
+      <li>Billing and payment details</li>
+      <li>Service requests and inquiries</li>
+      <li>Newsletter subscriptions</li>
+      <li>Feedback and survey responses</li>
+    </ul>
+    <p>This data is necessary to provide you with personalized service and to communicate effectively.</p>
+
+    <h3>Information We Collect Automatically</h3>
+    <p>When you visit our website, certain information is collected automatically through cookies and analytics including but not limited to:</p>
+    <ul>
+      <li>IP address</li>
+      <li>Browser type, version, and device information</li>
+      <li>Operating system and screen resolution</li>
+      <li>Pages visited, duration, and referral source</li>
+      <li>Interaction with website features</li>
+    </ul>
+    <p>This information helps improve the website, enhance user experience, and ensure security.</p>
+
+    <h3>Cookies and Similar Technologies</h3>
+    <p>We use cookies to improve functionality and performance. Cookies are small files placed on your device to save your preferences or track usage for analytics.</p>
+    <ul>
+      <li><strong>Essential cookies:</strong> Required for website operation.</li>
+      <li><strong>Performance cookies:</strong> Help us understand how users engage with the site.</li>
+      <li><strong>Functionality cookies:</strong> Remember your preferences like language.</li>
+      <li><strong>Advertising cookies:</strong> Used by third parties to present relevant ads.</li>
+    </ul>
+    <p>You can choose to disable cookies through browser settings but this may affect site functionality.</p>
+  </section>
+
+  <section>
+    <h2>How We Use Your Information</h2>
+    <p>Your information may be used for the following purposes:</p>
+    <ul>
+      <li>Providing and maintaining our plant care services</li>
+      <li>Processing transactions and payments securely</li>
+      <li>Responding to service requests and customer support</li>
+      <li>Sending service updates, promotions, and newsletters with your consent</li>
+      <li>Analyzing usage to enhance website functionality and content</li>
+      <li>Complying with legal obligations and enforcing policies</li>
+      <li>Protecting against fraudulent activities and security threats</li>
+    </ul>
+    <p>We do not sell, rent, or trade your personal data to third parties.</p>
+  </section>
+
+  <section>
+    <h2>Information Sharing and Disclosure</h2>
+    <p>We may share your personal information under limited conditions:</p>
+    <ul>
+      <li><strong>Service partners:</strong> Such as payment processors and hosting providers—under strict confidentiality agreements.</li>
+      <li><strong>Legal requirements:</strong> If compelled by law, regulation, or legal process.</li>
+      <li><strong>Transfers:</strong> In connection with business sales, mergers, or restructuring.</li>
+      <li><strong>Consent:</strong> When you explicitly agree to sharing your data.</li>
+    </ul>
+    <p>We require these parties to protect your data and use it only for specified purposes.</p>
+  </section>
+
+  <section>
+    <h2>Data Security</h2>
+    <p>We utilize industry-standard measures to safeguard your information including:</p>
+    <ul>
+      <li>SSL/TLS encryption for data transmitted between you and our website</li>
+      <li>Controlled access to data on a need-to-know basis by our authorized personnel</li>
+      <li>Regular updates and security patches for our systems</li>
+      <li>Continuous monitoring for suspicious activity</li>
+    </ul>
+    <p>However, no method of electronic transmission or storage is completely secure, so absolute security cannot be guaranteed.</p>
+  </section>
+
+  <section>
+    <h2>Data Retention and Deletion</h2>
+    <p>We retain your personal data only as long as necessary to fulfill the purposes described in this policy or as required by law.</p>
+    <p>When data is no longer needed, it is securely deleted or anonymized.</p>
+  </section>
+
+  <section>
+    <h2>Your Rights Regarding Personal Data</h2>
+    <p>Depending on your jurisdiction, you may have the following rights:</p>
+    <ul>
+      <li><strong>Access:</strong> Request a copy of your personal data we hold.</li>
+      <li><strong>Correction:</strong> Ask to correct inaccurate or incomplete information.</li>
+      <li><strong>Deletion:</strong> Request removal of your personal data, subject to exceptions.</li>
+      <li><strong>Objection:</strong> Object to certain processing activities.</li>
+      <li><strong>Restriction:</strong> Limit how your data is used.</li>
+      <li><strong>Data Portability:</strong> Obtain your data in a portable format.</li>
+      <li><strong>Withdraw Consent:</strong> Revoke consent where processing is based on it.</li>
+    </ul>
+    <p>To exercise these rights, please contact us using the contact information below.</p>
+  </section>
+
+  <section>
+    <h2>Third-Party Websites and Services</h2>
+    <p>Links on our website may lead to third-party sites that are not governed by this Privacy Policy.</p>
+    <p>We recommend reviewing privacy policies of linked sites prior to sharing personal information.</p>
+  </section>
+
+  <section>
+    <h2>Children’s Privacy</h2>
+    <p>Our services and website are not intended for children under 13, and we do not knowingly collect personal data from children under this age.</p>
+    <p>If you believe that we have collected personal data from a child under 13, please contact us immediately so we can take corrective action.</p>
+  </section>
+
+  <section>
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy periodically to reflect changes in our practices or regulations.</p>
+    <p>When we make material changes, we will notify you by email or prominently post a notice on our site prior to the change taking effect.</p>
+    <p>We encourage you to review this policy regularly to stay informed about how we are protecting your data.</p>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
+    <address>
+      Lust Vibes Houseplant Care<br />
+      838 Broadway,<br />
+      New York, NY 10003, USA<br />
+      Phone: <a href="tel:+12125550123" aria-label="Call Lust Vibes Houseplant Care">(212) 555-0123</a><br />
+      Email: <a href="mailto:privacy@lustvibes.com">privacy@lustvibes.com</a>
+    </address>
+  </section>
+
+  <section>
+    <h2>Additional Details and FAQs</h2>
+    <h3>What data do you collect when I visit your website?</h3>
+    <p>We collect information such as your IP address, browser type, and pages visited using cookies and analytics tools. This helps us improve site experience and security.</p>
+
+    <h3>Do you share my data with advertising networks?</h3>
+    <p>No, we do not sell or share your personal information with advertising networks. Some third-party cookies may be present due to embedded content, but we do not control their practices.</p>
+
+    <h3>How is data protected against breaches?</h3>
+    <p>We apply multi-layered security protocols including encryption, secure servers, regular audits, and controlled access. Nonetheless, no system is perfectly secure.</p>
+
+    <h3>Can I opt out of marketing communications?</h3>
+    <p>Yes, you can unsubscribe from newsletters and promotions anytime via links provided in our emails or by contacting us directly.</p>
+
+    <h3>How do I update my personal information?</h3>
+    <p>Contact us through the provided channels, and we will assist with corrections or updates to your data.</p>
+
+    <h3>Will this policy apply if I use your mobile app?</h3>
+    <p>Currently we operate only the website; if a mobile app is launched, its privacy terms will be provided separately.</p>
+
+    <h3>How do you handle data transfers internationally?</h3>
+    <p>We comply with applicable laws for international data transfers, including steps to ensure adequate protection of your personal information.</p>
+
+    <h3>What happens if a breach occurs?</h3>
+    <p>In the event of a data breach, we will notify affected users promptly as required by applicable laws and take necessary measures to mitigate harm.</p>
+
+    <h3>What legal bases do you rely on to process my data?</h3>
+    <p>Depending on context, our legal bases include consent, contractual necessity, compliance with legal obligations, and legitimate interests.</p>
+
+    <h3>Can I file a complaint about data use?</h3>
+    <p>Yes, you can contact relevant supervisory authorities if you believe your rights have been violated. We also invite you to contact us first to resolve concerns.</p>
+
+    <h3>How do you secure payment information?</h3>
+    <p>Payment details are handled securely through trusted third-party payment processors employing rigorous security certifications.</p>
+
+    <h3>Is my data used for analytics?</h3>
+    <p>Yes, aggregated and anonymized data may be used to analyze site usage trends and improve user experience, never linked to personally identifiable information.</p>
+
+    <h3>Do you use profiling or automated decision making?</h3>
+    <p>No, we do not engage in automated decision-making or profiling that significantly affects you.</p>
+
+    <h3>How can I contact you with privacy questions?</h3>
+    <p>Use the contact details above or email <a href="mailto:privacy@lustvibes.com">privacy@lustvibes.com</a>.</p>
+
+  </section>
+</main>
+
+<footer role="contentinfo" aria-label="Site footer with contact information">
+  <div class="container">
+    <section class="footer-section" tabindex="0" aria-labelledby="footer-contact-info">
+      <h4 id="footer-contact-info">Contact Us</h4>
+      <address>
+        838 Broadway,<br />
+        New York, NY 10003, USA<br />
+        <a href="tel:+18775554343" aria-label="Call Lust Vibes Houseplant Care">(877) 555-4343</a>
+      </address>
+    </section>
+  </div>
+  <small>&copy; 2024 Lust Vibes Houseplant Care. All rights reserved.</small>
+</footer>
+
+</body>
+</html>
+

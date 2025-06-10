@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Contact Lust Vibes Houseplant Care - Get in touch for expert houseplant care, services inquiries, and consultations." />
+<title>Contact Lust Vibes Houseplant Care</title>
+<style>
+  /* Matching index page theme and style */
+  :root {
+    --color-primary: #2a7a3d; /* dark green */
+    --color-primary-light: #a8d5a3; /* light leafy green */
+    --color-secondary: #f3e9d2; /* pale cream */
+    --color-accent: #f9a825; /* warm golden yellow */
+    --color-text-primary: #1b1b1b;
+    --color-text-secondary: #555959;
+    --color-background: #fbfcf9;
+    --color-card-bg: #ffffffcc;
+    --border-radius: 12px;
+    --shadow-light: 0 8px 24px rgba(42, 122, 61, 0.15);
+    --font-heading: 'Poppins', sans-serif;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: var(--font-heading);
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.65;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover, a:focus {
+    color: var(--color-accent);
+  }
+  img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    display: block;
+  }
+  .container {
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    background: var(--color-card-bg);
+    box-shadow: var(--shadow-light);
+    z-index: 1000;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    letter-spacing: 2px;
+    user-select: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .nav-links a:hover, .nav-links a[aria-current="page"] {
+    color: var(--color-accent);
+    font-weight: 700;
+  }
+  .hero {
+    background: linear-gradient(135deg, #d0ebd4 40%, #a8d5a3 100%);
+    padding: 5rem 1rem 4rem;
+    border-radius: 0 0 3rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+  }
+  .hero h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    line-height: 1.1;
+  }
+  .hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    font-size: 1.25rem;
+  }
+  /* Butterfly decoration */
+  .butterfly-1,
+  .butterfly-2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+    user-select: none;
+  }
+  .butterfly-1 {
+    top: 20px;
+    left: 10%;
+    animation: floaty 6s ease-in-out infinite;
+  }
+  .butterfly-2 {
+    top: 50px;
+    right: 12%;
+    animation: floaty 7s ease-in-out infinite alternate-reverse;
+  }
+  @keyframes floaty {
+    0%, 100% { transform: translateY(0) rotate(0deg);}
+    50% { transform: translateY(-15px) rotate(15deg);}
+  }
+  main {
+    max-width: 900px;
+    margin: 3rem auto 6rem;
+    padding: 0 1rem;
+  }
+  h2 {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  h3 {
+    color: var(--color-primary-light);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  section p {
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  ul {
+    margin-left: 1.5rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+  }
+  ul li {
+    margin-bottom: 0.6rem;
+  }
+  form {
+    background: var(--color-card-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    margin-top: 2rem;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: var(--color-primary);
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: var(--border-radius);
+    border: 1.5px solid var(--color-primary-light);
+    font-size: 1rem;
+    font-family: var(--font-heading);
+    resize: vertical;
+    margin-bottom: 1.25rem;
+    transition: border-color 0.3s ease;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: var(--color-accent);
+    outline: none;
+  }
+  textarea {
+    min-height: 140px;
+  }
+  button[type="submit"] {
+    background: var(--color-primary);
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(42,122,61,0.35);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  button[type="submit"]:hover,
+  button[type="submit"]:focus {
+    background: var(--color-accent);
+    transform: scale(1.05);
+  }
+  .contact-info {
+    margin-top: 3rem;
+    background: var(--color-card-bg);
+    padding: 2rem 1.8rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+  }
+  .contact-info h3 {
+    margin-top: 0;
+  }
+  .contact-info address {
+    font-style: normal;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+  }
+  .contact-info a {
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 0.3rem;
+  }
+  /* Responsive */
+  @media (max-width: 700px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav aria-label="Main navigation">
+      <div class="logo" tabindex="0">Lust Vibes</div>
+      <div class="nav-links">
+        <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0" aria-current="page">Contact us</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" role="banner" aria-label="Contact Lust Vibes Houseplant Care">
+  <img src="b1.png" alt="" class="butterfly-1" aria-hidden="true" />
+  <img src="b1.png" alt="" class="butterfly-2" aria-hidden="true" />
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Get in touch with Lust Vibes Houseplant Care for inquiries, consultations, or support. Our team is here to help your greenery thrive.</p>
+  </div>
+</section>
+
+<main class="container" role="main">
+  <section aria-labelledby="contact-intro">
+    <h2 id="contact-intro">How to Reach Us</h2>
+    <p>At Lust Vibes Houseplant Care, we understand that every plant and client is unique. Whether you want to schedule a service, ask for advice, or explore customized plant care solutions, we make connecting easy and pleasant.</p>
+    <p>Use any of the methods below to contact our dedicated team. We aim to respond promptly, delivering expert care and support you can trust.</p>
+  </section>
+
+  <section aria-labelledby="contact-form-section">
+    <h2 id="contact-form-section">Send Us a Message</h2>
+    <p>Please fill out the form below with your inquiry or message. Include as much detail as possible so we can better assist you.</p>
+    <form action="mailto:contact@lustvibes.com" method="POST" enctype="text/plain" aria-label="Contact form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+      
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+      
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="(optional) Your phone number" autocomplete="tel" />
+      
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Summary of your inquiry" required />
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+      
+      <button type="submit" aria-label="Submit contact form">Send Message</button>
+    </form>
+  </section>
+
+  <section class="contact-info" aria-labelledby="office-address">
+    <h3 id="office-address">Office Address & Phone</h3>
+    <address>
+      Lust Vibes Houseplant Care<br />
+      838 Broadway,<br />
+      New York, NY 10003, USA<br />
+      Phone: <a href="tel:+18775554343" aria-label="Call Lust Vibes Houseplant Care">(877) 555-4343</a><br />
+      Email: <a href="mailto:contact@lustvibes.com" aria-label="Email Lust Vibes Houseplant Care">contact@lustvibes.com</a>
+    </address>
+  </section>
+
+  <section aria-labelledby="visit-us">
+    <h2 id="visit-us">Visit Us for Personalized Support</h2>
+    <p>Our office is open Monday through Friday from 9:00 AM to 6:00 PM. Feel free to visit to discuss your plant care needs in person. Our experts are happy to offer personalized advice and arrange tailored service plans.</p>
+    <p>We maintain a welcoming, plant-filled environment to inspire and educate. Drop by for care tips, potting demos, or to explore our seasonal plant offerings.</p>
+  </section>
+
+  <section aria-labelledby="frequently-asked">
+    <h2 id="frequently-asked">Frequently Asked Questions</h2>
+    <h3>How quickly will I receive a response?</h3>
+    <p>We aim to reply to all inquiries within 24-48 hours during business days.</p>
+
+    <h3>Can I schedule an urgent houseplant care service?</h3>
+    <p>Yes, urgent requests are handled on a case-by-case basis. Contact us directly by phone for fastest arrangements.</p>
+
+    <h3>Do you provide consultations remotely?</h3>
+    <p>We offer both on-site and virtual consultations for your convenience.</p>
+
+    <h3>What payment methods do you accept?</h3>
+    <p>We accept credit/debit cards, PayPal, and cash payments as per service requirements.</p>
+
+    <h3>What kind of houseplants do you service?</h3>
+    <p>We specialize in all common and exotic indoor plants including tropical, succulents, air plants, and more.</p>
+
+    <h3>How do I update my contact information?</h3>
+    <p>Simply contact us with your new details and we will update your account promptly.</p>
+  </section>
+
+  <section aria-labelledby="our-commitment">
+    <h2 id="our-commitment">Our Commitment to You</h2>
+    <p>At Lust Vibes Houseplant Care, we pride ourselves on exceptional customer service combined with expert plant knowledge. Our goal is to foster thriving plants and happy clients through compassionate care and clear communication.</p>
+    <p>We welcome feedback and are dedicated to continuous improvement in every aspect of our service.</p>
+  </section>
+
+  <section aria-labelledby="ways-to-contact">
+    <h2 id="ways-to-contact">Other Ways to Contact Us</h2>
+    <ul>
+      <li><strong>Social Media:</strong> Connect with us on Facebook, Instagram, and Twitter for tips, inspiration, and news.</li>
+      <li><strong>Newsletter:</strong> Subscribe for regular plant care advice, offers, and event invites.</li>
+      <li><strong>Phone:</strong> Call us during office hours for quick questions or to set up appointments.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="additional-info">
+    <h2 id="additional-info">Additional Information</h2>
+    <p>We ensure your privacy and data security are respected at all times. Please review our <a href="privacy.html" aria-label="Privacy Policy">Privacy Policy</a> and <a href="terms.html" aria-label="Terms and Conditions">Terms and Conditions</a> for more details.</p>
+    <p>Our service area includes the greater New York City region. If you have questions about availability outside this area, please contact us.</p>
+  </section>
+
+</main>
+
+<footer role="contentinfo" aria-label="Site footer with contact information">
+  <div class="container">
+    <section class="footer-section" tabindex="0" aria-labelledby="footer-contact-info">
+      <h4 id="footer-contact-info">Contact Us</h4>
+      <address>
+        838 Broadway,<br />
+        New York, NY 10003, USA<br />
+        <a href="tel:+18775554343" aria-label="Call Lust Vibes Houseplant Care">(877) 555-4343</a>
+      </address>
+    </section>
+  </div>
+  <small>&copy; 2024 Lust Vibes Houseplant Care. All rights reserved.</small>
+</footer>
+
+</body>
+</html>
+
